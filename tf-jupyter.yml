@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tf-app
+  labels:
+    app: tf
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tf
+  template:
+    metadata:
+      labels:
+        app: tf
+    spec:
+      containers:
+      - name: tf
+        image: yenaing/ubuntu_nodered
+        ports:
+        - containerPort: 8888
+        securityContext:
+          privileged: true
+        volumeMounts:
+        - name: hostvol
+          mountPath: /notebooks
+      volumes:
+        - name: hostvol
+          persistentVolumeClaim:
+            # PVC name you created
+            claimName: tf-pvc
