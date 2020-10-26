@@ -30,3 +30,5 @@ spec:
           persistentVolumeClaim:
             # PVC name you created
             claimName: tf-pvc
+      nodeSelector:
+        accelerator: nvidia-gt710
