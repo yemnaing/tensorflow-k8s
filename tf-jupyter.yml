@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: tf
-        image: yenaing/ubuntu_nodered
+        image: tensorflow/tensorflow:latest-gpu-py3-jupyter
         ports:
         - containerPort: 8888
         - containerPort: 6006
