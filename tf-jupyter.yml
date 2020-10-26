@@ -19,6 +19,7 @@ spec:
         image: yenaing/ubuntu_nodered
         ports:
         - containerPort: 8888
+        - containerPort: 6006
         securityContext:
           privileged: true
         volumeMounts:
