@@ -16,7 +16,8 @@ spec:
     spec:
       containers:
       - name: tf
-        image: tensorflow/tensorflow:latest-gpu-py3-jupyter
+        #image: tensorflow/tensorflow:latest-gpu-py3-jupyter
+        image: tensorflow/tensorflow:latest-jupyter
         ports:
         - containerPort: 8888
         - containerPort: 6006
