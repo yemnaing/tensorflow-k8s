@@ -1,16 +1,16 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: tf-service
+  name: tf2.4-service
   labels:
-    app: tf
+    app: tf001
 spec:
   type: NodePort
   ports:
-  - name: tf
+  - name: tf001
     port: 8888
   - name: tf-web
     port: 80
     targetPort: 6006
   selector:
-    app: tf
+    app: tf001
