@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: tf-app
+  name: tf2.4-app
   labels:
-    app: tf
+    app: tf001
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: tf
+      app: tf001
   template:
     metadata:
       labels:
-        app: tf
+        app: tf001
     spec:
       containers:
-      - name: tf
+      - name: tf001
         #image: tensorflow/tensorflow:latest-gpu-py3-jupyter
         image: tensorflow/tensorflow:latest-jupyter
         ports:
