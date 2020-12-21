@@ -4,7 +4,7 @@ metadata:
   # any PVC name
   name: tf-pvc
 spec:
-  storageClassName: tf001
+  storageClassName: tf002
   accessModes:
   # ReadWriteMany(RW from multi nodes), ReadWriteOnce(RW from a node), ReadOnlyMany(R from multi nodes)
     - ReadWriteMany
