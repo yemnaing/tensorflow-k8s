@@ -25,7 +25,7 @@ spec:
           privileged: true
         volumeMounts:
         - name: hostvol
-          mountPath: /notebooks
+          mountPath: /tf
       volumes:
         - name: hostvol
           persistentVolumeClaim:
