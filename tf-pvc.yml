@@ -11,4 +11,4 @@ spec:
   resources:
     requests:
        # storage size to use
-      storage: 10Gi
+      storage: 100Gi
