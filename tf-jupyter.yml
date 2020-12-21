@@ -17,7 +17,7 @@ spec:
       containers:
       - name: tf001
         #image: tensorflow/tensorflow:latest-gpu-py3-jupyter
-        image: tensorflow/tensorflow:latest-jupyter
+        image: yenaing/mytensorflow2.4-gpu-jupyter
         ports:
         - containerPort: 8888
         - containerPort: 6006
