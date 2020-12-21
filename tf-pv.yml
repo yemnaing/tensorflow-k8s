@@ -4,7 +4,7 @@ metadata:
   # any PV name
   name: tf-pv
 spec:
-  storageClassName: tf001
+  storageClassName: tf002
   capacity:
     # storage size
     storage: 10Gi
