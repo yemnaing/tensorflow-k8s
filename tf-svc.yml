@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: tf2.4-service
+  name: tf24-service
   labels:
     app: tf001
 spec:
