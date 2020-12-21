@@ -7,7 +7,7 @@ spec:
   storageClassName: tf001
   capacity:
     # storage size
-    storage: 10Gi
+    storage: 100Gi
   accessModes:
     # ReadWriteMany(RW from multi nodes), ReadWriteOnce(RW from a node), ReadOnlyMany(R from multi nodes)
     - ReadWriteMany
