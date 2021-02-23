@@ -22,13 +22,13 @@ spec:
         - containerPort: 6006
         securityContext:
           privileged: true
-        volumeMounts:
-        - name: hostvol
-          mountPath: /notebooks
-      volumes:
-        - name: hostvol
-          persistentVolumeClaim:
+        #volumeMounts:
+        #- name: hostvol
+        #  mountPath: /notebooks
+#      volumes:
+#        - name: hostvol
+#          persistentVolumeClaim:
             # PVC name you created
-            claimName: tf-pvc
-      nodeSelector:
-        accelerator: nvidia-gt710
+#            claimName: tf-pvc
+ #     nodeSelector:
+  #      accelerator: nvidia-gt710
